@@ -1,9 +1,11 @@
-import MainNet from './components/section/MainNet'
+
+import MainNet from '/components/Section/MainNet'
 
 export default function Home() {
   return (
-    <div>
+    <main className="main-container">
       <MainNet/>
-    </div>
+    </main>
+
   );
 }

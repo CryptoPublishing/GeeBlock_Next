@@ -1,11 +1,15 @@
+
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "700"], // 원하는 폰트 두께 지정
 });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +20,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
       <body>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
