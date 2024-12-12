@@ -3,8 +3,6 @@
     font-size: 14px;
     width: 100%;
     height: 100%;
-    padding: 0 120px;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,35 +86,42 @@
   }
 
   @media (max-width: 1200px) {
-    .headerInner {
-      padding: 0 80px;
-    }
-    
     .nav > ul {
-      gap: 20px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .headerInner {
-      padding: 0 40px;
+      gap: 20px;  
     }
     
     .logo img {
-      width: 100px;  /* 모바일에서 로고 더 축소 */
+      width: 120px;  
       height: auto;
-    }
-    
-    .btn {
-      padding: 6px 12px;  /* 버튼 크기 축소 */
-    }
-    .nav > ul {
-      gap: 16px; 
     }
   }
   
-  @media (max-width: 480px) {
-    .headerInner {
-      padding: 0 20px;
+  @media (max-width: 992px) {
+    .nav > ul {
+      gap: 16px;
     }
-}
+  
+    .btn {
+      padding: 6px 12px;  
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav > ul {
+      gap: 12px;
+    }
+    
+    .nav li {
+      padding: 8px;  
+    }
+  
+  }
+  
+  
+  @media (max-width: 576px) {
+    .nav {
+      display: none;  
+    }
+    
+  }
