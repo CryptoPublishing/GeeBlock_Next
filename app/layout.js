@@ -1,10 +1,6 @@
-import { Geist } from "next/font/google";
+import Header from "@/components/Header/Header";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,8 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable}}`}>
+      <body>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

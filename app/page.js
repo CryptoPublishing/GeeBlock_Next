@@ -1,9 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div>
-    </div>
+    <main className="main-container">
+      {/* 섹션들 */}
+      <div>섹션1</div>
+    </main>
   );
 }
