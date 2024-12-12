@@ -1,3 +1,9 @@
+
+/* globals.css */
+
+:root {
+    --bg-color: #010113;
+}
 /* reset.css */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,6 +49,10 @@ table {
 	border-spacing: 0;
 }
 
+body{
+	background-color: var(--bg-color);
+}
+
 .fixed-header {
     position: fixed;
     top: 0;
@@ -56,8 +66,10 @@ table {
     width: 100%;
     margin-top: 80px;
     padding: 0 120px;
+	box-sizing:border-box;
 }
 .footer {
     height: 80px;
     width: 100%;
+
 }

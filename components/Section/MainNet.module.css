@@ -1,0 +1,12 @@
+.container{
+    background-color:var(--bg-color);
+}
+
+.inner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.text{
+    color: #fff;
+}
