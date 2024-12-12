@@ -1,9 +1,10 @@
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "700"], // 원하는 폰트 두께 지정
 });
 
 export const metadata = {
@@ -13,9 +14,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable}}`}>
+    <html lang="en" className={inter.className}>
+      <body>
         {children}
+        <p>폰트 테스트</p>
       </body>
     </html>
   );
