@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
       <body>
         {children}
-        <p>폰트 테스트</p>
       </body>
     </html>
   );
