@@ -2,6 +2,7 @@
 import { useState } from "react";
 import styles from "./Header.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -10,13 +11,16 @@ export default function Header() {
       <header className="fixed-header">
         <div className={styles.headerInner}>
           <div className={styles.logo}>
-            <Image 
-              src="/images/header-logo.png"
-              alt="GeeBlock Logo"
-              width={132}
-              height={44}
-              priority  // 헤더 로고는 빠른 로딩을 위해 priority 설정
-            />
+            <Link href="/">
+              <Image 
+                src="/images/header-logo.png"
+                alt="GeeBlock Logo"
+                width={132}
+                height={44}
+                priority  
+              />
+            </Link>
+           
           </div>
           <nav className={styles.nav}>
             <ul>
