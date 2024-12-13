@@ -28,7 +28,7 @@ export default function IntroSection(){
             <div className={styles.contentWrapper}>
                 <div className={styles.logoWrapper}>
                     <Image 
-                        src="/images/logo-large.png"
+                        src="/images/introSection/logo-large.png"
                         alt="GeeBlock Logo"
                         width={120}
                         height={126}
@@ -40,7 +40,7 @@ export default function IntroSection(){
                 <h1 className={styles.mainTitle}>
                     Welcome to<br />
                     <Image 
-                        src="/images/geeblock-text.png"
+                        src="/images/introSection/geeblock-text.png"
                         alt="GeeBlock"
                         width={456}
                         height={121}
@@ -67,7 +67,7 @@ export default function IntroSection(){
                             <h3>GeeBlock</h3>
                             <div className={styles.iconWrapper}>
                                 <Image 
-                                    src="/images/intro-icon1.png"
+                                    src="/images/introSection/intro-icon1.png"
                                     alt="GeeBlock"
                                     width={152}
                                     height={152}
@@ -85,7 +85,7 @@ export default function IntroSection(){
                             <h3>$GEE</h3>
                             <div className={styles.iconWrapper}>
                                 <Image 
-                                    src="/images/intro-icon2.png"
+                                    src="/images/introSection/intro-icon2.png"
                                     alt="$GEE"
                                     width={152}
                                     height={152}
@@ -101,7 +101,7 @@ export default function IntroSection(){
                             <h3>GEE Ecosystem</h3>
                             <div className={styles.iconWrapper}>
                                 <Image 
-                                    src="/images/intro-icon3.png"
+                                    src="/images/introSection/intro-icon3.png"
                                     alt="GEE Ecosystem"
                                     width={152}
                                     height={152}

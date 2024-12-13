@@ -190,6 +190,7 @@
    
     .contentWrapper button {
       padding: 14px 36px;
+      margin-bottom: 1rem;
     }
 }
    
@@ -230,5 +231,6 @@
     .contentWrapper button {
       padding: 12px 32px;
       font-size: 14px;
+      margin-bottom: 1rem;
     }
 }
