@@ -1,4 +1,4 @@
-// components/MainNet.js
+// components/MainNet.js//
 import styles from './MainNet.module.css';
 
 export default function MainNet() {
