@@ -1,11 +1,15 @@
 // components/MainNet.js//
 import styles from './MainNet.module.css';
+import Image from 'next/image';
+import Governance from '@/public/images/Governance.svg';
+import Grants from '@/public/images/Grants.svg';
+import Ecosystem from '@/public/images/Ecosystem.svg';
 
 export default function MainNet() {
   return (
     <div className={styles.container}>
-      <div className={styles.inner}>
-        <div>
+      <div className={`${styles.mainNetInner} ${styles.rowReverse}`}>
+        <div className={styles.textWrap}>
           <p className={styles.title}> GeeBlock MainNet</p>
           <p className={styles.text}>
             The GEEBLOCK MainNet is a Layer 1 network managed by a
@@ -17,15 +21,29 @@ export default function MainNet() {
           </p>
           <p className={styles.text}>
             Contribute to the decentralized economy with your unique dApp
-            project. Innovation is made possible through your team. GEEBLOCK
-            allows anyone to use the blockchain under the same conditions
-            without requiring permission.
+            project. <br /> Innovation is made possible through your team.
+            <br />
+            GEEBLOCK allows anyone to use the blockchain under the same
+            <br />
+            conditions without requiring permission.
           </p>
+          <button className={styles.button}>
+            <p className={styles.btnText}>Go To The Whitepaper</p>
+            <Image
+              src="/images/mainNetSection/chevron_forward.png"
+              alt="forward"
+              width={20}
+              height={20}
+              quality={100}
+              className={styles.forward}
+            />
+          </button>
         </div>
-        <div>
+        <div className={styles.svgWrap}>
           <svg
-            width="395"
-            height="413"
+            className={styles.svg}
+            width="490"
+            height="437"
             viewBox="0 0 395 413"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -179,6 +197,68 @@ export default function MainNet() {
               </linearGradient>
             </defs>
           </svg>
+        </div>
+      </div>
+      <div className={styles.subInner}>
+        <div className={`${styles.inner} ${styles.rowReverse}`}>
+          <div className={styles.textWrap}>
+            <p className={styles.commonTitle}> Governance</p>
+            <p className={styles.text}>
+              The future of GeeBlock is yours to innovate and build. <br />
+              As a member of the GeeBlock Community, <br />
+              you can propose improvements or new ideas and vote on <br />
+              GeeBlock Improvement Proposals (GIP)
+            </p>
+            <p className={styles.text}>
+              From framework upgrades to core code changes, <br />
+              you can help shape the future of the network.
+              <br /> Make an impact. Propose your ideas.
+            </p>
+          </div>
+          <div>
+            <Governance />
+          </div>
+        </div>
+
+        <div className={styles.inner}>
+          <div>
+            <Grants />
+          </div>
+          <div className={styles.textWrap}>
+            <p className={styles.commonTitle}> Governance</p>
+            <p className={styles.text}>
+              The future of GeeBlock is yours to innovate and build. <br />
+              As a member of the GeeBlock Community, <br />
+              you can propose improvements or new ideas and vote on <br />
+              GeeBlock Improvement Proposals (GIP)
+            </p>
+            <button className={styles.button}>
+              <p className={styles.btnText}>Go To The Grants</p>
+              <Image
+                src="/images/mainNetSection/chevron_forward.png"
+                alt="forward"
+                width={20}
+                height={20}
+                quality={100}
+                className={styles.forward}
+              />
+            </button>
+          </div>
+        </div>
+
+        <div className={`${styles.inner} ${styles.rowReverse}`}>
+          <div className={styles.textWrap}>
+            <p className={styles.commonTitle}>GeeBlock Ecosystem</p>
+            <p className={styles.text}>
+              Your ideas are at the heart of theGeeBlock ecosystem. <br />
+              Developers, organizations, businesses, and users are <br />
+              Explore the diverse projects built within the GeeBlock <br />
+              ecosystem and learn how to start your own project today.
+            </p>
+          </div>
+          <div>
+            <Ecosystem />
+          </div>
         </div>
       </div>
     </div>
