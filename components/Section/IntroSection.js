@@ -1,7 +1,11 @@
 'use client'
 import { useEffect, useRef } from "react"
 import styles from "./IntroSection.module.css"
-import Image from "next/image";
+import LargeLogo from "@/public/images/introSection/logo-large.svg";
+import GeeBlock from "@/public/images/introSection/GeeBlock.svg";
+import Icon1 from "@/public/images/introSection/intro-icon1.svg";
+import Icon2 from "@/public/images/introSection/intro-icon2.svg";
+import Icon3 from "@/public/images/introSection/intro-icon3.svg";
 
 export default function IntroSection(){
     const videoRef = useRef(null);
@@ -27,26 +31,12 @@ export default function IntroSection(){
 
             <div className={styles.contentWrapper}>
                 <div className={styles.logoWrapper}>
-                    <Image 
-                        src="/images/introSection/logo-large.png"
-                        alt="GeeBlock Logo"
-                        width={120}
-                        height={126}
-                        className={styles.logoImage}
-                        priority
-                    />
+                    <LargeLogo width={120} height={230}  className={styles.logoImage} />
                 </div>
 
                 <h1 className={styles.mainTitle}>
                     Welcome to<br />
-                    <Image 
-                        src="/images/introSection/geeblock-text.png"
-                        alt="GeeBlock"
-                        width={456}
-                        height={121}
-                        className={styles.titleImage}
-                        priority
-                    />
+                    <GeeBlock className={styles.titleImage} />
                 </h1>
 
                 <p>
@@ -66,13 +56,7 @@ export default function IntroSection(){
                         <div className={styles.cardInner}>
                             <h3>GeeBlock</h3>
                             <div className={styles.iconWrapper}>
-                                <Image 
-                                    src="/images/introSection/intro-icon1.png"
-                                    alt="GeeBlock"
-                                    width={152}
-                                    height={152}
-                                    className={styles.cardIcon}
-                                />
+                                <Icon1 className={styles.cardIcon} />
                             </div>
                           
                             <p>The cutting-edge blockchain technology of GeeBlock</p>
@@ -84,13 +68,7 @@ export default function IntroSection(){
                         <div className={styles.cardInner}>
                             <h3>$GEE</h3>
                             <div className={styles.iconWrapper}>
-                                <Image 
-                                    src="/images/introSection/intro-icon2.png"
-                                    alt="$GEE"
-                                    width={152}
-                                    height={152}
-                                    className={styles.cardIcon}
-                                />
+                                <Icon2 className={styles.cardIcon} />
                             </div>
                             <p>Value growth through $GEE Tokenomics</p>
                         </div>
@@ -100,13 +78,7 @@ export default function IntroSection(){
                         <div  className={styles.cardInner}>
                             <h3>GEE Ecosystem</h3>
                             <div className={styles.iconWrapper}>
-                                <Image 
-                                    src="/images/introSection/intro-icon3.png"
-                                    alt="GEE Ecosystem"
-                                    width={152}
-                                    height={152}
-                                    className={styles.cardIcon}
-                                />
+                                <Icon3  className={styles.cardIcon} />
                             </div>
                             <p>Leading the Web3 market through the activation of the GeeBlock Ecosystem</p>
                         </div>

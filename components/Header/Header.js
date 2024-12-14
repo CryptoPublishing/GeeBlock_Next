@@ -1,8 +1,8 @@
 'use client'
 import { useState } from "react";
 import styles from "./Header.module.css";
-import Image from "next/image";
 import Link from "next/link";
+import HeaderLogo from "@/public/images/header-logo.svg";
 
 export default function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -12,13 +12,7 @@ export default function Header() {
         <div className={styles.headerInner}>
           <div className={styles.logo}>
             <Link href="/">
-              <Image 
-                src="/images/header-logo.png"
-                alt="GeeBlock Logo"
-                width={132}
-                height={44}
-                priority  
-              />
+              <HeaderLogo />
             </Link>
            
           </div>
