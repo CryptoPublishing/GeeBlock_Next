@@ -2,6 +2,14 @@
 import Image from "next/image";
 import styles from "./TabSection.module.css";
 import { useState } from "react";
+import DesciIcon1 from "@/public/images/tabSection/desci-icon1.svg";
+import DesciIcon2 from "@/public/images/tabSection/desci-icon2.svg";
+import AiIcon1 from "@/public/images/tabSection/ai-icon1.svg";
+import AiIcon2 from "@/public/images/tabSection/ai-icon2.svg";
+import AiIcon3 from "@/public/images/tabSection/ai-icon3.svg";
+import DefiIcon from "@/public/images/tabSection/defi-icon.svg";
+import GameIcon from "@/public/images/tabSection/game-icon.svg";
+
 
 export default function TabSection(){
     const [activeTab, setActiveTab] = useState('De-Sci')
@@ -10,7 +18,7 @@ export default function TabSection(){
         <div className={styles.deSciLayout}>
             <div className={styles.sectionCol}>
                 <div className={styles.imgBox}>
-                    <Image src="/images/tabSection/desci-img1.png" alt="De-Sci 1" width={230} height={230} />
+                    <DesciIcon1 />
                 </div>
                 <p>The Convergence of Blockchain Technology and Science A project aimed at building an ecosystem 
                     by utilizing blockchain technology to store scientific and technological data and implementing 
@@ -19,7 +27,7 @@ export default function TabSection(){
             </div>
             <div className={styles.sectionCol}>
                 <div className={styles.imgBox}>
-                    <Image src="/images/tabSection/desci-img2.png" alt="De-Sci 2" width={230} height={230} />
+                    <DesciIcon2 />
                 </div>
                 <p>Thousands of cattle grazing on vast grasslands in South America are being equipped with 
                     IoT-enabled devices implanted within their bodies. These devices collect physiological and location data, 
@@ -34,7 +42,7 @@ export default function TabSection(){
         <div className={styles.aiLayout}>
             <div className={styles.sectionCol}>
                 <div className={styles.imgBox}>
-                    <Image src="/images/tabSection/ai-img1.png" alt="AI 1" width={230} height={186} />
+                    <AiIcon1 />
                 </div>
                 <p>GeeBlock provides the most optimized AI-based communication browser service the most optimized 
                     AI-based communication browser service in gaming, entertainment, and financial services etc,.
@@ -42,13 +50,13 @@ export default function TabSection(){
             </div>
             <div className={styles.sectionCol}>
                 <div className={styles.imgBox}>
-                    <Image src="/images/tabSection/ai-img2.png" alt="AI 2" width={230} height={184} />
+                    <AiIcon2 />
                 </div>
                 <p>The combination of GeeBlock's AI platform and innovative tokenomics creates a compelling ecosystem</p>
             </div>
             <div className={styles.sectionCol}>
                 <div className={styles.imgBox}>
-                    <Image src="/images/tabSection/ai-img3.png" alt="AI 3" width={230} height={191} />
+                    <AiIcon3 />
                 </div>
                 <p>AI GeeBlock's AI Platform enables anyone to create AI applications based on generative communication and build our ecosystem. </p>
             </div>
@@ -58,7 +66,7 @@ export default function TabSection(){
       const renderDeFiContent = () => (
         <div className={styles.layoutCommon}>
             <div className={styles.imgSection}>
-              <Image src="/images/tabSection/defi-img.png" alt="De-Fi" width={416} height={370} />
+              <DefiIcon />
             </div>
             <div className={styles.rightSection}>
                 <div className={styles.textSection}>
@@ -77,7 +85,7 @@ export default function TabSection(){
       const renderGameContent = () => (
         <div className={styles.layoutCommon}>
             <div className={styles.imgSection}>
-              <Image src="/images/tabSection/game-img.png" alt="Game" width={416} height={382} />
+              <GameIcon />
             </div>
             <div className={styles.rightSection}>
                 <div className={styles.textSection}>
