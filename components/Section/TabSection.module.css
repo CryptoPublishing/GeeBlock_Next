@@ -1,47 +1,49 @@
 /* TabSection.module.css */
 .tabSection {
-    width: 100%;
-    padding: 60px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-  
+
 .tabButtons {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
 }
-  
+
 .tabButton {
-    width: 100px;
-    height: 48px;
-    background: transparent;
-    border: 1px solid #3F424D;
-    border-radius: 8px;
-    color: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 100px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid #3F424D;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-  
+
 .tabButton.active {
   background: linear-gradient(90deg, #00D9FF 0%, #E14AFF 100%);
   border: none;
   color: white;
 }
+
 .tabContent {
-    display: flex;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.5s ease forwards;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    height: 526px;
+  display: flex;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease forwards;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  height: 526px;
 }
+
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -50,169 +52,197 @@
 }
 
 .tabContent::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 40px;
-    padding: 1px; /* 테두리 두께 */
-    background: linear-gradient(90deg, 
-      #4E2E76 0%,    /* 시작 색상 */
-      #8F81CC 51%,   /* 중간 색상 */
-      #19ABB8 100%   /* 끝 색상 */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  padding: 1px;
+  /* 테두리 두께 */
+  background: linear-gradient(90deg,
+      #4E2E76 0%,
+      /* 시작 색상 */
+      #8F81CC 51%,
+      /* 중간 색상 */
+      #19ABB8 100%
+      /* 끝 색상 */
     );
-    -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    z-index: 0;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 0;
 }
-  
+
 /* 내부 콘텐츠 */
-.tabContent > div {
-    position: relative;
-    z-index: 1;
+.tabContent>div {
+  position: relative;
+  z-index: 1;
 }
-.imgBox{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.imgBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgBox::before {
-    content: '';
-    position: absolute;
-    width: 400px;  /* 원형 크기 조절 */
-    height: 400px;
-    background: radial-gradient(
-      circle at center,
-      rgba(139, 92, 246, 0.3) 0%,   /* 보라색 */
-      rgba(59, 130, 246, 0.1) 50%,   /* 파란색 */
-      transparent 70%
-    );
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(20px);  
+  content: '';
+  position: absolute;
+  width: 400px;
+  /* 원형 크기 조절 */
+  height: 400px;
+  background: radial-gradient(circle at center,
+      rgba(139, 92, 246, 0.3) 0%,
+      /* 보라색 */
+      rgba(59, 130, 246, 0.1) 50%,
+      /* 파란색 */
+      transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(20px);
 }
+
 .imgBox img {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 /* de-sci section */
-.deSciLayout{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 160px;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-}
-.sectionCol{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    font-size: 14px;
-    max-width: 420px;
+.deSciLayout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 160px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
 }
 
-.sectionCol p{
-    text-align: center;
-    line-height: 24px;
+.sectionCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  font-size: 14px;
+  max-width: 420px;
 }
+
+.sectionCol p {
+  text-align: center;
+  line-height: 24px;
+}
+
 /* AI section */
-.aiLayout{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 69px;
-    align-items: center;
-    justify-content: center;
+.aiLayout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 69px;
+  align-items: center;
+  justify-content: center;
 }
+
 .aiLayout .sectionCol {
-    max-width: 328px; /* AI 섹션의 텍스트 너비 제한 */
+  max-width: 328px;
+  /* AI 섹션의 텍스트 너비 제한 */
 }
+
 .layoutCommon {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    padding: 70px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 70px;
 }
-.imgSection{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    position: relative;
+
+.imgSection {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
+
 .imgSection::before {
   content: '';
   position: absolute;
-  width: 600px;  /* 원형 크기 조절 */
+  width: 600px;
+  /* 원형 크기 조절 */
   height: 600px;
-  background: radial-gradient(
-    circle at center,
-    rgba(139, 92, 246, 0.3) 0%,   /* 보라색 */
-    rgba(59, 130, 246, 0.1) 50%,   /* 파란색 */
-    transparent 70%
-  );
+  background: radial-gradient(circle at center,
+      rgba(139, 92, 246, 0.3) 0%,
+      /* 보라색 */
+      rgba(59, 130, 246, 0.1) 50%,
+      /* 파란색 */
+      transparent 70%);
   border-radius: 50%;
   z-index: -1;
-  filter: blur(20px);  
-  top: 50%;  /* 추가 */
-  left: 50%;  /* 추가 */
-  transform: translate(-50%, -50%);  /* 추가 */
+  filter: blur(20px);
+  top: 50%;
+  /* 추가 */
+  left: 50%;
+  /* 추가 */
+  transform: translate(-50%, -50%);
+  /* 추가 */
 }
-.rightSection{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.rightSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.textSection{
+
+.textSection {
   max-width: 470px;
   line-height: 24px;
   font-size: 14px;
 }
- 
+
 @media (max-width: 1200px) {
   .tabContent {
     padding: 0 40px;
   }
 
   .deSciLayout {
-    gap: 80px; /* 160px에서 축소 */
+    gap: 80px;
+    /* 160px에서 축소 */
     padding: 30px 0;
   }
 
   .aiLayout {
-    gap: 40px; /* 69px에서 축소 */
+    gap: 40px;
+    /* 69px에서 축소 */
   }
 
   .sectionCol {
-    max-width: 380px; /* 420px에서 축소 */
+    max-width: 380px;
+    /* 420px에서 축소 */
   }
 
   .aiLayout .sectionCol {
-    max-width: 300px; /* 328px에서 축소 */
+    max-width: 300px;
+    /* 328px에서 축소 */
   }
 
   .layoutCommon {
-    padding: 50px 0; /* 70px에서 축소 */
+    padding: 50px 0;
+    /* 70px에서 축소 */
   }
 
   .imgSection img {
-    width: 400px !important; /* Image 컴포넌트의 width를 강제로 조정 */
-    height: auto !important; /* 비율 유지 */
+    width: 400px !important;
+    /* Image 컴포넌트의 width를 강제로 조정 */
+    height: auto !important;
+    /* 비율 유지 */
   }
 
   .textSection {
-    max-width: 400px; /* 470px에서 축소 */
+    max-width: 400px;
+    /* 470px에서 축소 */
   }
 }
 
@@ -236,9 +266,12 @@
   .layoutCommon {
     padding: 40px 0;
   }
+
   .imgSection img {
-    width: 300px !important; /* Image 컴포넌트의 width를 강제로 조정 */
-    height: auto !important; /* 비율 유지 */
+    width: 300px !important;
+    /* Image 컴포넌트의 width를 강제로 조정 */
+    height: auto !important;
+    /* 비율 유지 */
   }
 }
 
@@ -246,7 +279,8 @@
   .tabContent {
     flex-direction: column;
     padding: 0 20px;
-    height: auto; /* 높이 자동 조정 */
+    height: auto;
+    /* 높이 자동 조정 */
   }
 
   .tabButtons {
@@ -262,8 +296,10 @@
     gap: 40px;
     padding: 50px 0;
   }
+
   .deSciLayout .sectionCol {
-    max-width: 500px; /* AI 섹션의 텍스트 너비 제한 */
+    max-width: 500px;
+    /* AI 섹션의 텍스트 너비 제한 */
   }
 
   /* AI 섹션 */
@@ -272,8 +308,10 @@
     gap: 50px;
     padding: 50px 0;
   }
+
   .aiLayout .sectionCol {
-    max-width: 500px; /* AI 섹션의 텍스트 너비 제한 */
+    max-width: 500px;
+    /* AI 섹션의 텍스트 너비 제한 */
   }
 
   /* De-Fi, Game 섹션 */
@@ -282,12 +320,14 @@
     padding: 30px 10px;
     gap: 30px;
   }
-  .imgSection{
+
+  .imgSection {
     display: flex;
     justify-content: center;
   }
 
-  .imgSection, .rightSection {
+  .imgSection,
+  .rightSection {
     width: 100%;
   }
 
@@ -304,9 +344,11 @@
 
 @media (max-width: 480px) {
   .tabButtons {
-    width: 100%; /* 전체 너비 사용 */
+    width: 100%;
+    /* 전체 너비 사용 */
     justify-content: center;
   }
+
   .tabButton {
     width: 80px;
     height: 40px;
@@ -318,7 +360,8 @@
     height: 300px;
   }
 
-  .sectionCol, .aiLayout .sectionCol {
+  .sectionCol,
+  .aiLayout .sectionCol {
     max-width: 100%;
     padding: 0 15px;
   }
