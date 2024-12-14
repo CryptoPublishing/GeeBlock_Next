@@ -1,12 +1,23 @@
-.container{
-    background-color:var(--bg-color);
+.container {
+    background-color: var(--bg-color);
+    max-width: 1200px;
 }
 
-.inner{
+.inner {
     display: flex;
     justify-content: space-around;
 }
 
-.text{
+
+.title {
+    font-size: 52px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #E14AFF 0%, #00D9FF 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text {
+    padding-top: 50px;
     color: #fff;
 }
